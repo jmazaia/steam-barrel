@@ -22,6 +22,10 @@ This is an Electron application for macOS that allows you to run Windows-only St
     ```bash
     git clone https://github.com/your-username/steam-macos.git
     ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd steam-macos
+    ```
 3.  **Install dependencies:**
     ```bash
     npm install
