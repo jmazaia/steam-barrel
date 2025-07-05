@@ -17,6 +17,7 @@ To set up the application, simply run the installation script:
 ```
 
 This script will:
+
 - Install Homebrew (if not already installed)
 - Install Node.js and npm (if not already installed)
 - Install Wine (if not already installed)
@@ -26,30 +27,9 @@ This script will:
 
 After the script completes, you can run the application:
 
-<<<<<<< HEAD
 ```bash
 npm start
 ```
-=======
-    Alternatively, you can download the installer from the official Node.js website: [https://nodejs.org/](https://nodejs.org/)
-
-2.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/jmazaia/steam-barrel.git
-    ```
-3.  **Navigate to the project directory:**
-    ```bash
-    cd steam-macos
-    ```
-4.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
-5.  **Run the application:**
-    ```bash
-    npm start
-    ```
->>>>>>> 9ea5ff56841ead9c96e262d4caaa1cbeff1f1c9d
 
 ## Usage
 
