@@ -1,4 +1,4 @@
-# Steam macOS
+# Steam Barrel
 
 This is an Electron application for macOS that allows you to run Windows-only Steam games using Wine.
 
