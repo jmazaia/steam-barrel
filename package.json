@@ -1,0 +1,33 @@
+{
+  "name": "steam-macos",
+  "version": "1.0.0",
+  "description": "A macOS Electron app that runs Windows-only Steam games using Wine.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-dmg": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "electron": "^31.0.1"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+  },
+  "config": {
+    "forge": {
+      "makers": [
+        {
+          "name": "@electron-forge/maker-dmg",
+          "config": {
+            "name": "Steam macOS"
+          }
+        }
+      ]
+    }
+  }
+}

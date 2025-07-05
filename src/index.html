@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Steam macOS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Steam macOS</h1>
+      <p class="lead">Run Windows-only Steam games on your Mac.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <button id="install-btn" class="btn btn-primary btn-lg btn-block">Install Steam</button>
+      </div>
+      <div class="col-md-6">
+        <button id="launch-btn" class="btn btn-success btn-lg btn-block">Launch Steam</button>
+      </div>
+    </div>
+    <div id="logs">
+      <h2>Logs</h2>
+      <pre id="log-output"></pre>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
