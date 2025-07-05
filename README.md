@@ -10,7 +10,15 @@ This is an Electron application for macOS that allows you to run Windows-only St
 
 ## Installation and Setup
 
-1.  **Clone the repository:**
+1.  **Install Node.js and npm:**
+    If you don't have Node.js and npm installed, you can install them using Homebrew:
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    brew install node
+    ```
+    Alternatively, you can download the installer from the official Node.js website: [https://nodejs.org/](https://nodejs.org/)
+
+2.  **Clone the repository:**
     ```bash
     git clone https://github.com/your-username/steam-macos.git
     ```
@@ -89,7 +97,7 @@ If you encounter issues with graphics or performance, you may need to install or
 
 ## Support
 
-If you find this project helpful, consider supporting its development.
+If you find this project helpful, consider supporting its development. For questions or support, you can reach me on Discord: `mazaiaa`.
 
 [![Donate with PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=jonathan_mazaia@outlook.com&item_name=Supporting+the+development+of+Steam+macOS)
 
