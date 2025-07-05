@@ -8,10 +8,16 @@ WINE_PREFIX="$HOME/.steam-wine"
 STEAM_SETUP_URL="https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe"
 DXVK_VERSION="2.3"
 
-# Check for Homebrew
+# Install Homebrew
 if ! command -v brew &> /dev/null; then
-  echo "Homebrew not found. Please install it first."
-  exit 1
+  echo "Homebrew not found. Installing Homebrew..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+# Install Node.js and npm
+if ! command -v node &> /dev/null; then
+  echo "Node.js not found. Installing Node.js..."
+  brew install node
 fi
 
 # Install Wine
@@ -26,7 +32,11 @@ if [ ! -d "$WINE_PREFIX" ]; then
   mkdir -p "$WINE_PREFIX"
 fi
 
-
+# Install npm dependencies
+if [ ! -d "node_modules" ]; then
+  echo "Installing npm dependencies..."
+  npm install
+fi
 
 # Download and install Steam
 if [ ! -f "$WINE_PREFIX/steam.done" ]; then

@@ -10,38 +10,25 @@ This is an Electron application for macOS that allows you to run Windows-only St
 
 ## Installation and Setup
 
-0.  **Install Homebrew (if not already installed):**
-    Homebrew is a package manager for macOS that simplifies the installation of software. If you don't have it installed, open your Terminal and run:
+To set up the application, simply run the installation script:
 
-    ```bash
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    ```
+```bash
+./scripts/install_steam.sh
+```
 
-1.  **Install Node.js and npm:**
-    If you don't have Node.js and npm installed, you can install them using Homebrew:
+This script will:
+- Install Homebrew (if not already installed)
+- Install Node.js and npm (if not already installed)
+- Install Wine (if not already installed)
+- Create the Wine prefix
+- Download and install Steam
+- Install project dependencies
 
-    ```bash
-    brew install node
-    ```
+After the script completes, you can run the application:
 
-    Alternatively, you can download the installer from the official Node.js website: [https://nodejs.org/](https://nodejs.org/)
-
-2.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/jmazaia/steam-macos.git
-    ```
-3.  **Navigate to the project directory:**
-    ```bash
-    cd steam-macos
-    ```
-4.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
-5.  **Run the application:**
-    ```bash
-    npm start
-    ```
+```bash
+npm start
+```
 
 ## Usage
 
