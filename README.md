@@ -10,11 +10,17 @@ This is an Electron application for macOS that allows you to run Windows-only St
 
 ## Installation and Setup
 
+0.  **Install Homebrew (if not already installed):**
+    Homebrew is a package manager for macOS that simplifies the installation of software. If you don't have it installed, open your Terminal and run:
+
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+
 1.  **Install Node.js and npm:**
     If you don't have Node.js and npm installed, you can install them using Homebrew:
 
     ```bash
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew install node
     ```
 
