@@ -1,4 +1,4 @@
-# Steam macOS
+# Steam Barrel
 
 This is an Electron application for macOS that allows you to run Windows-only Steam games using Wine.
 
@@ -26,9 +26,30 @@ This script will:
 
 After the script completes, you can run the application:
 
+<<<<<<< HEAD
 ```bash
 npm start
 ```
+=======
+    Alternatively, you can download the installer from the official Node.js website: [https://nodejs.org/](https://nodejs.org/)
+
+2.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/jmazaia/steam-barrel.git
+    ```
+3.  **Navigate to the project directory:**
+    ```bash
+    cd steam-macos
+    ```
+4.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+5.  **Run the application:**
+    ```bash
+    npm start
+    ```
+>>>>>>> 9ea5ff56841ead9c96e262d4caaa1cbeff1f1c9d
 
 ## Usage
 
