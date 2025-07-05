@@ -28,7 +28,7 @@ This is an Electron application for macOS that allows you to run Windows-only St
 
 2.  **Clone the repository:**
     ```bash
-    git clone https://github.com/jmazaia/steam-macos.git
+    git clone https://github.com/jmazaia/steam-barrel.git
     ```
 3.  **Navigate to the project directory:**
     ```bash
