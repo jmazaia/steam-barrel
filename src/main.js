@@ -68,7 +68,7 @@ ipcMain.on("launch-steam", (event) => {
     "steam.exe"
   );
   if (fs.existsSync(steamPath)) {
-    runCommand("wine", [steamPath], (output) => {
+    runCommand("wine", [steamPath, "-noreactlogin"], (output) => {
       event.sender.send("log", output);
     });
   } else {
