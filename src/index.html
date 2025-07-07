@@ -1,37 +1,128 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Steam macOS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <img src="barrel.png" alt="Barrel" class="logo">
-            <h1>Steam macOS</h1>
-            <p>Run Windows-only Steam games on your Mac.</p>
-        </header>
-        <main>
-            <div class="buttons">
-                <button id="install-btn" class="btn">
-                    <i class="fas fa-download"></i>
-                    <span>Install Steam</span>
-                    <div class="loader"></div>
-                </button>
-                <button id="launch-btn" class="btn">
-                    <i class="fas fa-rocket"></i>
-                    <span>Launch Steam</span>
-                    <div class="loader"></div>
-                </button>
+  <head>
+    <meta charset="UTF-8" />
+    <title>SteamBarrel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header Section -->
+      <header class="header">
+        <div class="header-content">
+          <div class="logo-section">
+            <img src="barrel.png" alt="SteamBarrel" class="logo" />
+            <div class="title-section">
+              <h1>SteamBarrel</h1>
+              <p class="subtitle">Run Windows Steam games on macOS</p>
             </div>
-            <div id="logs">
-                <h2>Logs</h2>
-                <pre id="log-output"></pre>
+          </div>
+          <div class="status-indicator">
+            <div class="status-dot" id="status-dot"></div>
+            <span class="status-text" id="status-text">Ready</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Progress Section -->
+        <div class="progress-section" id="progress-section">
+          <div class="progress-info">
+            <span class="progress-label" id="progress-label"
+              >Ready to begin</span
+            >
+            <span class="progress-percentage" id="progress-percentage">0%</span>
+          </div>
+          <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+          <div class="progress-details" id="progress-details">
+            Select an action to get started
+          </div>
+        </div>
+
+        <!-- Action Cards -->
+        <div class="action-cards">
+          <div class="card primary-card">
+            <div class="card-header">
+              <i class="fas fa-download"></i>
+              <h3>Install Steam</h3>
             </div>
-        </main>
+            <p class="card-description">
+              Download and install Steam using Wine compatibility layer
+            </p>
+            <button id="install-btn" class="btn btn-primary">
+              <span class="btn-text">Install Steam</span>
+              <div class="btn-loader">
+                <div class="spinner"></div>
+              </div>
+            </button>
+          </div>
+
+          <div class="card secondary-card">
+            <div class="card-header">
+              <i class="fas fa-rocket"></i>
+              <h3>Launch Steam</h3>
+            </div>
+            <p class="card-description">
+              Start Steam and begin playing your Windows games
+            </p>
+            <button id="launch-btn" class="btn btn-secondary">
+              <span class="btn-text">Launch Steam</span>
+              <div class="btn-loader">
+                <div class="spinner"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Management Tools -->
+        <div class="management-section">
+          <h3 class="section-title">Management Tools</h3>
+          <div class="tool-buttons">
+            <button id="clear-cache-btn" class="btn btn-tool">
+              <i class="fas fa-broom"></i>
+              <span>Clear Cache</span>
+            </button>
+            <button id="quit-btn" class="btn btn-tool btn-warning">
+              <i class="fas fa-stop"></i>
+              <span>Quit Wine</span>
+            </button>
+            <button
+              id="remove-installation-btn"
+              class="btn btn-tool btn-danger"
+            >
+              <i class="fas fa-trash"></i>
+              <span>Remove Installation</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Console Output -->
+        <div class="console-section">
+          <div class="console-header">
+            <h3>Console Output</h3>
+            <button id="clear-console-btn" class="btn-icon">
+              <i class="fas fa-eraser"></i>
+            </button>
+          </div>
+          <div class="console-output" id="console-output">
+            <div class="console-line welcome">
+              <span class="timestamp">[00:00:00]</span>
+              <span class="message"
+                >SteamBarrel initialized. Ready for commands.</span
+              >
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
+
     <script src="renderer.js"></script>
-</body>
+  </body>
 </html>
